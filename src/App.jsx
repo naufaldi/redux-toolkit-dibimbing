@@ -7,6 +7,7 @@ import { decrement, increment } from './redux/slice/countSlice';
 import ChangeStatus from './components/changeStatus';
 import ChangeCount from './components/changeCount';
 import Status from './components/status';
+import Home from './components/home';
 
 function App() {
   const [count, setCount] = useState(100);
@@ -36,6 +37,7 @@ function App() {
         <button onClick={() => dispatch(decrement())}>Add -1</button>
         <Status />
         <ChangeStatus />
+        <Home />
         {/* <button onClick={() => dispatch(statusTrue())}>Add -1</button>
         <button onClick={() => dispatch(statusFalse())}>Add -1</button> */}
         <p>
