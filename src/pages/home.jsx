@@ -4,7 +4,7 @@ import ChangeStatus from '../components/changeStatus';
 import Status from '../components/status';
 import { decrement, increment } from '../redux/slice/countSlice';
 const Home = () => {
-  const [count, setCount] = useState(100);
+  // const [count, setCount] = useState(100);
 
   const countRedux = useSelector((state) => state.count.count);
 
